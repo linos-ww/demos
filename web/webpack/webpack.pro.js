@@ -6,7 +6,7 @@ const WebpackBar =require('webpackbar')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports={
     mode:"production",
-    entry:process.env.TYPE=='js'?"./src/index.js":"./src/index.ts",
+    entry:"./src/index.ts",
     output:{
         path:path.resolve(__dirname,"../dist"),
         chunkFilename:'[chunkFilename]-[hash].[ext]',

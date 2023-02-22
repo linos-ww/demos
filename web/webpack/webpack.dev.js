@@ -7,7 +7,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports={
     mode:"development",
-    entry:process.env.TYPE=='js'?"./src/index.js":"./src/index.ts",
+    entry:"./src/index.ts",
     output:{
         path:path.resolve(__dirname,"dist"),
         filename:"[name]-[id].js"
@@ -63,9 +63,9 @@ module.exports={
         proxy:{
             "/":{
                 // target:"http://101.201.141.76:8103",
-                // target:'http://localhost:5000',
+                target:'http://localhost:5000',
                 // pathRewrite:{'^/api':''},
-                // changeOrigin:true
+                changeOrigin:true
             }
         }
     },

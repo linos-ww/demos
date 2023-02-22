@@ -1,3 +1,3 @@
-import { circle, circle_with_text } from "./SVG/基础图形";
-circle_with_text(100,100,100,'xxx')
-
+import { get_inner_text_width } from "./HTML/获取文本宽度";
+const rect=get_inner_text_width('12354655')
+console.log(rect)
